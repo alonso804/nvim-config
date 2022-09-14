@@ -27,6 +27,7 @@ keymap("n", "<Leader>;", "$a;<Esc>", opts)
 keymap("n", "<C-e>", "10<C-e>", opts)
 keymap("n", "<C-y>", "10<C-y>", opts)
 keymap("n", "<F3>", ":noh<CR>", opts)
+keymap("n", "<F2>", ":lua vim.lsp.buf.rename()<CR>", opts)
 keymap("n", "<Leader>x", ":bdelete<CR>", opts)
 keymap("n", "<Leader>f", ":Format<CR>", opts)
 
@@ -57,6 +58,7 @@ keymap("n", "<A-Up>", "<Esc>:m .-2<CR>==", opts)
 -- Telescope
 keymap("n", "<C-p>", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<CR>", opts)
 keymap("n", "<Leader>a", "<cmd>Telescope live_grep<CR>", opts)
+keymap("n", "<Leader>t", "<cmd>Telescope treesitter<CR>", opts)
 
 ------------
 -- Visual --
@@ -68,6 +70,9 @@ keymap("v", ">", ">gv", opts)
 -- Move text up and down
 keymap("v", "<A-Down>", ":m .+1<CR>==", opts)
 keymap("v", "<A-Up>", ":m .-2<CR>==", opts)
+
+-- Change selected word
+keymap("v", "<C-r>", "\"hy:%s/<C-r>h//gc<left><left><left>", opts)
 
 -- Visual Block --
 -- Move text up and down
