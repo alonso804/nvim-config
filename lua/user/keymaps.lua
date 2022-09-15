@@ -28,7 +28,7 @@ keymap("n", "<C-e>", "10<C-e>", opts)
 keymap("n", "<C-y>", "10<C-y>", opts)
 keymap("n", "<F3>", ":noh<CR>", opts)
 keymap("n", "<F2>", ":lua vim.lsp.buf.rename()<CR>", opts)
-keymap("n", "<Leader>x", ":bdelete<CR>", opts)
+keymap("n", "<Leader>x", ":Bdelete<CR>", opts)
 keymap("n", "<Leader>f", ":Format<CR>", opts)
 
 -- Resize with arrows
@@ -56,7 +56,7 @@ keymap("n", "<A-Down>", "<Esc>:m .+1<CR>==", opts)
 keymap("n", "<A-Up>", "<Esc>:m .-2<CR>==", opts)
 
 -- Telescope
-keymap("n", "<C-p>", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<CR>", opts)
+keymap("n", "<C-p>", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false, hidden=true }))<CR>", opts)
 keymap("n", "<Leader>a", "<cmd>Telescope live_grep<CR>", opts)
 keymap("n", "<Leader>t", "<cmd>Telescope treesitter<CR>", opts)
 
