@@ -172,3 +172,10 @@ char randChar() {{
 			)
 		),
 })
+
+luasnip.add_snippets("typescript", {
+  luasnip.parser.parse_snippet(
+    { trig = "clg", wordTrig = false },
+  "console.log(${0});"
+  ),
+})
