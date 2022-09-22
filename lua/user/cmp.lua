@@ -145,11 +145,13 @@ cmp.setup.cmdline(':', {
   sources = cmp.config.sources({ { name = 'path' } }, { { name = 'cmdline' } })
 })
 
--- MY SNIPPETS
+-----------------
+-- MY SNIPPETS --
+-----------------
 luasnip.add_snippets("cpp", {
   luasnip.parser.parse_snippet(
 		{ trig = "maind", wordTrig = false },
-		"#include <bits/stdc++.h>\n\n#define deb(x) cout << #x << \": \" << x << endl;\n#define FOR(i,a,b) for (int i = (a); i < (b); i++)\n\nusing namespace std;\n\nint main() {\n  ${1}\n\n  return 0;\n}"
+		"#include <iostream>\n\n#define deb(x) cout << #x << \": \" << x << endl;\n#define FOR(i,a,b) for (int i = (a); i < (b); i++)\n\nusing namespace std;\n\nint main() {\n  ${1}\n\n  return 0;\n}"
 	),
   luasnip.parser.parse_snippet(
 		{ trig = "header", wordTrig = false },
