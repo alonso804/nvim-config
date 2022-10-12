@@ -1,7 +1,7 @@
 local tree = require("nvim-tree").setup({
+  open_on_setup = true,
   view = {
     width = 30,
-    height = 30,
     mappings = {
       list = {
         { key = { "l", "<CR>", "o" }, action = "edit" },
