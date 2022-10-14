@@ -28,8 +28,9 @@ keymap("n", "<C-e>", "10<C-e>", opts)
 keymap("n", "<C-y>", "10<C-y>", opts)
 keymap("n", "<F3>", ":noh<CR>", opts)
 keymap("n", "<F2>", ":lua vim.lsp.buf.rename()<CR>", opts)
-keymap("n", "<Leader>x", ":Bdelete<CR>", opts)
 keymap("n", "<Leader>f", ":Format<CR>", opts)
+keymap("n", "<Leader>x", ":Bdelete<CR>", opts)
+keymap("n", "<Leader>X", ":bufdo Bdelete<CR>", opts)
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
