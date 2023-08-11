@@ -31,6 +31,8 @@ keymap("n", "<F2>", ":lua vim.lsp.buf.rename()<CR>", opts)
 keymap("n", "<Leader>f", ":Format<CR>", opts)
 keymap("n", "<Leader>x", ":Bdelete<CR>", opts)
 keymap("n", "<Leader>X", ":bufdo Bdelete<CR>", opts)
+keymap("n", "<Leader>v", ":vsplit<CR>", opts)
+keymap("n", "<Leader>s", ":split<CR>", opts)
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)

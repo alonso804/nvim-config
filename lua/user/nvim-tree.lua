@@ -1,5 +1,5 @@
 local tree = require("nvim-tree").setup({
-  open_on_setup = true,
+  -- open_on_setup = true,
   view = {
     width = 30,
     mappings = {
